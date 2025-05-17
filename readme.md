@@ -2,8 +2,8 @@
 
 ## Exemplo de configuração `.env`:
 ```env
-# OpenAI API
-OPENAI_API_KEY=sk-...
+# Gemini API
+GOOGLE_API_KEY=...
 
 # SendGrid
 SENDGRID_API_KEY=SG.xxx

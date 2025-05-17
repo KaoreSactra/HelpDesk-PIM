@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 
 # Módulos
-from openai_service import classify_message
+from gemini_service import classify_message
 from router import choose_recipient
 from email_service import send_email
 
@@ -39,8 +39,8 @@ def receive_message():
         return jsonify({'erro': f'Erro ao enviar e-mail: {str(e)}'}), 500
 
     return jsonify({
-      'status': 'ok',
-      'category': category
+        'status': 'ok',
+        'category': category
     }), 200
 
 if __name__ == '__main__':
